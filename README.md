@@ -1,1 +1,1 @@
-# Laba1OGU.io
+# smaik007.github.io
