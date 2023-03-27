@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Форма регистрации пользователя</h1>
+    <form action="smaik007.github.io/test.txt" enctype="text/plain" method="post"></form>
+    <hr>
+    <form>
+    <table>
+        <tr>
+            <td><label>E-mail:</label></td>
+            <td><input placeholder="Введите email:" type="email" name="email" required></td>
+            
+        </tr>
+        <tr>
+            <td><label >Пароль:</label></td>
+            <td><input placeholder="Введите пароль:" type="password" name="Pasword" required></td>
+        </tr>
+        <tr>
+            <td><label>Пол:</label></td>
+            <td><label><input type="radio" name="gender" value="man" checked >Мужской</label>
+                <label><input type="radio" name="gender" value="wom" >Женский</label></td>
+        </tr>
+        <tr>
+            <td><label>Год рождения:</label></td>
+            <td>
+                <select name="year">
+                    <option>1981</option>
+                    <option>1982</option>
+                    <option>1983</option>
+                    <option>1984</option>
+                    <option>1985</option>
+                    <option>1986</option>
+                    <option>1987</option>
+                    <option>1988</option>
+                    <option>1989</option>
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Я знаю:</label></td>
+            <td>
+                <p><label><input type="checkbox" name="language" value="ru" checked disabled>Русский язык</label></p>
+                <p><label><input type="checkbox" name="language" value="sp" >Испанский язык</label></p>
+                <p><label><input type="checkbox" name="language" value="en" >Английский язык</label></p>
+                <p><label><input type="checkbox" name="language" value="ge" >Немецкий язык</label></p>
+                <p><label><input type="checkbox" name="language" value="ch" >Китайский язык</label></p>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Обо мне:</label></td>
+            <td><textarea placeholder="Напишите коротко о себе:" rows="5" cols="24" name="about"></textarea></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Готово</button> </td>
+            <td><button type="reset">Очистить</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
