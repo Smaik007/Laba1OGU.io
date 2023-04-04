@@ -1,0 +1,21 @@
+h1,h2{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+
+strong{
+    font-family: 'Caveat', sans-serif;
+}
+
+p{
+    margin: 20px;
+}
+
+em{
+    border-bottom: double;
+    padding: 2px;
+}
+
+body{
+    background-image: url("first_bg.jpg");
+}

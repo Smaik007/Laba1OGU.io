@@ -1,0 +1,20 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+p {
+	text-align: right;
+}
+
+h1,
+h2 {
+	text-align: right;
+	color: red;
+	font-family: sans-serif;
+}
+
+em {
+	color: green;
+	font-style: italic;
+}

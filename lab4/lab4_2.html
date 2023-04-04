@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+		<meta charset="UTF-8">
+		<title>Оформление вертикального меню</title>
+		<style>
+			html {
+				background: #f0f0f0;
+			}
+			
+			.menu {
+				width: 250px;
+				background: #fff;
+			}
+			
+			.menu ul {
+				list-style-type: none;
+            }
+			
+			.menu li {
+                list-style-image: url(minus.gif);
+			}
+			
+			.menu li a {
+			    text-decoration: underline;
+			    color: #369;
+                
+			}
+			
+			.menu li a:hover {
+                background-color: white;
+			    color: #369;
+			}
+			
+			.menu li ul {
+                padding-bottom: 10px;
+                padding-left: 10px;
+			}
+			
+			.menu li li {
+                list-style-image: url(point.gif);
+			}
+	</style>
+</head>
+<body>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Фильмы</a>
+				<ul>
+					<li><a href="https://www.filmpro.ru/materials/selections/73390">Экшн</a></li>
+					<li><a href="https://www.kinopoisk.ru/lists/movies/genre--romance/">Мелодрамы</a></li>
+					<li><a href="https://www.film.ru/a-z/serials">Сериалы</a></li>
+					<li><a href="https://www.kinopoisk.ru/lists/movies/genre--family/?b=films">Семейные</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Музыка</a>
+				<ul>
+					<li><a href="https://your-melody.ru/klassicheskaya-muzyka/">Классика</a></li>
+					<li><a href="http://the-radio.ru/genre/classic-jazz">Джаз</a></li>
+					<li><a href="https://music.apple.com/ru/playlist/%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D0%BA%D0%B0-%D1%80%D0%BE%D0%BA%D0%B0/pl.ae12fec18a8b471788ee5956ac67b95a">Рок</a></li>
+					<li><a href="https://muzofond.fm/search/%D0%B3%D1%80%D0%B0%D0%BD%D0%B6">Грандж</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Софт</a>
+				<ul>
+					<li><a href="https://lifehacker.ru/besplatnye-graficheskie-redaktory/">Графика</a></li>
+					<li><a href="https://lifehacker.ru/programmy-dlya-3d-modelirovaniya/">3D-моделирование</a></li>
+					<li><a href="http://urikor.net/rus/Soft00.html">Машинопись</a></li>
+					<li><a href="https://lifehacker.ru/slovari-i-perevodchiki-dlya-android-i-ios/">Переводчики</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Игры</a>
+				<ul>
+					<li><a href="https://www.igromania.ru/games/all/rpg/">РПГ</a></li>
+					<li><a href="https://vseigru.net/igry-shutery.html">Шутеры</a></li>
+					<li><a href="https://razlozhi.ru/patiences">Пасьянсы</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>
