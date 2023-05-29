@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>lab1Smaik</title>
+    <style>
+        .menu li a:hover {
+        background-color:rgb(181, 161, 239);
+        transition: background-color 1s, transform 1.5s;
+        }
+    </style>
+</head>
+<body>
+  <script>
+   "use strict"
+   let age = prompt("Возраст", "")
+   let gnder = prompt("Пол (ж/м)", "") 
+  if ((age <=59 && age >=18 && gnder=='м')||(age <=54 && age >=18 && gnder=='ж')){
+    alert( "Вам ещё работать и работать")
+  }else if ((age>=60 && age <=64 && gnder=='м')||(age>=55 && age <=59 && gnder=='ж')){
+    alert('Скоро пенсия!')
+  }else if((age>=65 && gnder=='м')||(age>=60 && gnder=='ж')){
+    alert('Да кто ты такой?')
+  }
+  </script>
+</body>
+</html>

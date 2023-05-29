@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>lab5Smaik</title>
+    <style>
+        .menu li a:hover {
+        background-color:rgb(181, 161, 239);
+        transition: background-color 1s, transform 1.5s;
+        }
+    </style>
+</head>
+<body>
+  <script>
+   "use strict"
+   "use strict";
+    let n = prompt("Введите целое число строк");
+    let s1 = "cat cat dog dog dog";
+    let s2 ="dog cat cat dog dog";
+    let s3 ="dog dog cat cat dog";
+    let s4 ="dog dog dog cat cat";
+    var str = [s1, s2, s3, s4];
+    for (let i = 0; i < n; i++) {
+        console.log(str[i%4]);
+        }
+
+  </script>
+</body>
+</html>

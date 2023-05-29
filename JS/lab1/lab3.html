@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>lab3Smaik</title>
+    <style>
+        .menu li a:hover {
+        background-color:rgb(181, 161, 239);
+        transition: background-color 1s, transform 1.5s;
+        }
+    </style>
+</head>
+<body>
+  <script>
+   "use strict"
+   let num = prompt("Введите число, большее 100 или нажмите esc", "");
+   if(num < 101){
+   do{
+    num = prompt("Введите число, большее 100 или нажмите esc", "");
+   }while (num < 100 && num);
+}
+  </script>
+</body>
+</html>
