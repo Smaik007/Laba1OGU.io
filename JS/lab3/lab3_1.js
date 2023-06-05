@@ -22,8 +22,8 @@ export function ucFirst(str) { //возвращает строку str с заг
 }
 
 export function checkSpam(str) { //возвращает true, если строка str содержит 'viagra' или 'XXX', а иначе false. Функция должна быть нечувствительна к регистру.
-    let NewStr = str.toLowerCase();
-    return NewStr.includes('viagra') || NewStr.includes('xxx');
+    let newstr = str.toLowerCase();
+    return newstr.includes('viagra') || NewStr.includes('xxx');
 }
 
 export function truncate(str, maxlength) { //проверяет длину строки str, и если она превосходит maxlength – заменяет конец str на символ многоточие "…"
@@ -36,13 +36,13 @@ export function truncate(str, maxlength) { //проверяет длину ст�
 }
 
 export function  camelize(str){ //преобразуйте строку вида 'var-test-text' в 'varTestText'. То есть, дефисы удаляются, а все слова после них получают заглавную букву. 
-    let STR = str.split("-");
-    let StrNew = "";
-    for (let i = 0; i <= STR.length - 1; i++) {
-        if (i == 0) StrNew = STR[0];
-        else StrNew += ucFirst(STR[i]);
+    let stroka = str.split("-");
+    let strnw = "";
+    for (let i = 0; i <= stroka.length - 1; i++) {
+        if (i == 0) strnw = stroka[0];
+        else strnw += ucFirst(stroka[i]);
     }
-    return StrNew;
+    return strnw;
 }
 
 import  {fib}  from './lab2.js';
