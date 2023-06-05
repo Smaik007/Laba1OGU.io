@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<title>List</title>
+  <meta charset="UTF-8">
+  <title>List</title>
 </head>
+
 <body>
   <ul>
     <li>Животные
@@ -45,14 +47,15 @@
 
   <script>
     'use strict';
-	  let li = document.getElementsByTagName("li");
+    let li = document.getElementsByTagName("li");
 
-        for (let i = 0; i < li.length; i++) {
-            let title = li[i].firstChild.textContent.trim();
-            let qty = li[i].getElementsByTagName("li").length;
+    for (let i = 0; i < li.length; i++) {
+      let title = li[i].firstChild.textContent.trim();
+      let qty = li[i].getElementsByTagName("li").length;
 
-            console.log(title + " - " + qty);
-        }
+      console.log(title + " - " + qty);
+    }
   </script>
 </body>
+
 </html>

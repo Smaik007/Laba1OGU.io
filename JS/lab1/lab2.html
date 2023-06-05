@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <title>lab2Smaik</title>
     <style>
         .menu li a:hover {
-        background-color:rgb(181, 161, 239);
-        transition: background-color 1s, transform 1.5s;
+            background-color: rgb(181, 161, 239);
+            transition: background-color 1s, transform 1.5s;
         }
     </style>
 </head>
+
 <body>
-  <script>
-   "use strict"
-    let num = prompt ( "Введите целое число", "" );
-    if( num % 100 >= 11 && num % 100 <= 14){
-       switch(num%100){
-        case 11:
-            alert(`На ветке сидит  ${ num } ворон`)
-            break;
-        case 12:
-            alert(`На ветке сидит  ${ num } ворон`)
-            break;
-        case 13:
-            alert(`На ветке сидит  ${ num } ворон`)
-            break;
-        case 14:
-            alert(`На ветке сидит  ${ num } ворон`)
-            break;
-       }
-    }
-        else{
-            switch ( num % 10 ){
-            case 0: 
-            alert(`На ветке сидит  ${ num } ворон`)
-            break;
-            case 1:
-            alert(`На ветке сидит  ${ num } ворона`)
-            break;
-            case 2:
-            alert(`На ветке сидит  ${ num } вороны`)
-            break;
-        case 3:
-            alert(`На ветке сидит  ${ num } вороны`)
-            break;
-        case 4:
-            alert(`На ветке сидит  ${ num } вороны`)
-            break;
-        case 5:
-        alert(`На ветке сидит  ${ num } ворон`)
-             break;
-        case 6:
-            alert(`На ветке сидит  ${ num } ворон`)
-            break;
-        case 7:
-            alert(`На ветке сидит  ${ num } ворон`)
-            break;
-        case 9:
-            alert(`На ветке сидит  ${ num } ворон`)
-            break;
-            default:
-            alert(`Число нецелое`)
-            break;
+    <script>
+        "use strict"
+        let num = prompt("Введите целое число", "");
+        if (num % 100 >= 11 && num % 100 <= 14) {
+            switch (num % 100) {
+                case 11:
+                    alert(`На ветке сидит  ${num} ворон`)
+                    break;
+                case 12:
+                    alert(`На ветке сидит  ${num} ворон`)
+                    break;
+                case 13:
+                    alert(`На ветке сидит  ${num} ворон`)
+                    break;
+                case 14:
+                    alert(`На ветке сидит  ${num} ворон`)
+                    break;
+            }
         }
+        else {
+            switch (num % 10) {
+                case 0:
+                    alert(`На ветке сидит  ${num} ворон`)
+                    break;
+                case 1:
+                    alert(`На ветке сидит  ${num} ворона`)
+                    break;
+                case 2:
+                    alert(`На ветке сидит  ${num} вороны`)
+                    break;
+                case 3:
+                    alert(`На ветке сидит  ${num} вороны`)
+                    break;
+                case 4:
+                    alert(`На ветке сидит  ${num} вороны`)
+                    break;
+                case 5:
+                    alert(`На ветке сидит  ${num} ворон`)
+                    break;
+                case 6:
+                    alert(`На ветке сидит  ${num} ворон`)
+                    break;
+                case 7:
+                    alert(`На ветке сидит  ${num} ворон`)
+                    break;
+                case 9:
+                    alert(`На ветке сидит  ${num} ворон`)
+                    break;
+                default:
+                    alert(`Число нецелое`)
+                    break;
+            }
         }
-  </script>
+    </script>
 </body>
+
 </html>
