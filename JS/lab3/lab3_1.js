@@ -1,3 +1,4 @@
+'use strict';
 export function getDecimal(num) { //возвращает дробную часть числа num.
     if (Math.trunc(num) == num) {
         return 0;
