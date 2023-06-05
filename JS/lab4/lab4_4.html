@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<body>
+  <script>
+    "use strict";
+    let obj = {
+        className: 'open menu'
+    }
+
+    function addClass(obj, cls){
+        let subObj = {};
+        let arr = obj.className ? obj.className.split(" "):[];
+        for(let i=0;i<arr.length;i++){
+            subObj[arr[i]] = true;
+        }
+        subObj[cls] = true;
+        arr = Object.keys(subObj);        
+        obj.className = arr.join(" ");        
+    }
+    function removeClass(obj, cls) {
+			let sub = " " + obj.className + " ";
+			sub = sub.replace(" " + cls + " ", " ");
+			obj.className = sub.trim(" ");
+		}
+
+    addClass(obj, 'new');
+    addClass(obj, 'open');
+    addClass(obj, 'me');
+
+    alert(obj.className);
+    removeClass(obj.me);
+    alert(obj.className);
+</script>
+</body>
+
+</html> 

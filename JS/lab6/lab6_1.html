@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <title>Работа с событиями</title>
+    </head>
+
+    <body>
+        <input type="button" id = "hider" value = "Нажмите, чтобы спрятать текст"/>
+
+        <div id = "text">Текст</div>
+
+        <script>
+            'use strict'
+
+            let b = document.getElementById("hider")
+
+            b.addEventListener('click', function() {
+                let t = document.getElementById("text")
+
+                if (t.style.display != "none") {
+                    t.style.display = "none"
+                    b.value = "Показать текст"
+                } else {
+                    t.style.display = "block"
+                    b.value = "Нажмите, чтобы спрятать текст"
+                }     
+            }, false)
+        </script>
+    </body>
+</html>

@@ -12,11 +12,11 @@
 <body>
   <script>
    "use strict"
-   let num = prompt("Введите число, большее 100 или нажмите esc", "");
+   let num;
    if(num < 101){
    do{
     num = prompt("Введите число, большее 100 или нажмите esc", "");
-   }while (num < 100 && num);
+   }while ((Number(num)!=num  || num<=100)&& num);
 }
   </script>
 </body>

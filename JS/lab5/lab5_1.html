@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab5Smaik</title>
+</head>
+<body>
+	<div>Пользователи:</div>
+	<ul>
+		<li>Маша</li>
+		<li>Вовочка</li>
+	</ul>
+	<script>
+	console.log(document.head);
+		console.log(document.head.innerHTML);
+
+		console.log(document.querySelector("ul"));
+		console.log(document.querySelector("ul").innerHTML);
+
+		console.log(document.querySelector("li"));
+		console.log(document.querySelector("li").innerHTML);
+
+		let elemLi = document.querySelectorAll("li");
+		console.log(elemLi);
+
+		for (let i = 0; i < elemLi.length; i++)
+			console.log(elemLi[i].innerHTML);
+	</script>
+</body>
+</html>

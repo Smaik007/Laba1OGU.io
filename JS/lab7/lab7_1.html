@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lab7_1</title>
+</head>
+<body>
+	<select>
+		<option value="Rock" selected>Рок</option>
+		<option value="Blues" >Блюз</option>
+	</select>
+
+	<script>
+		'use strict';
+		let sel = document.querySelector("select");
+
+		console.log(sel.options[sel.selectedIndex].value + " : " + sel.options[sel.selectedIndex].text);
+
+		sel.options[sel.options.length] = new Option("Классика","Classic",true,true);
+
+		console.log(sel.options[sel.selectedIndex].value + " : " + sel.options[sel.selectedIndex].text);
+
+	</script>
+</body>
+</html>

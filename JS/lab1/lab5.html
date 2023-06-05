@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>lab5Smaik</title>
-    <style>
-        .menu li a:hover {
-        background-color:rgb(181, 161, 239);
-        transition: background-color 1s, transform 1.5s;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5Smaik</title>
 </head>
-<body>
-  <script>
-   "use strict"
-   "use strict";
-    let n = prompt("Введите целое число строк");
-    let s1 = "cat cat dog dog dog";
-    let s2 ="dog cat cat dog dog";
-    let s3 ="dog dog cat cat dog";
-    let s4 ="dog dog dog cat cat";
-    var str = [s1, s2, s3, s4];
-    for (let i = 0; i < n; i++) {
-        console.log(str[i%4]);
-        }
 
-  </script>
+<body>
+    <script>
+        "use strict";
+
+let n = prompt("Введите количество строк: ");
+let row1 = "dog  dog dog cat cat dog ";
+let row2 = "dog dog cat cat dog dog";
+let row3 = "dog cat cat dog dog dog";
+let row4 = "cat cat dog dog dog cat";
+let row5 = "cat dog dog dog cat cat";
+var list = [row1, row2, row3, row4, row5]
+for (let i = 0; i <n; i++) {
+ console.log(list[i%5]);
+}
+    </script>
 </body>
 </html>

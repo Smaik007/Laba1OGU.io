@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<body>
+  <script>
+    "use strict";
+    function isEmpty(obj) {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
+}
+    let book1 = {};
+    alert(isEmpty(book1));
+
+    book1.title = "Моя жизнь";
+book1.pubYear = 1930;
+book1.price = 660;
+alert(isEmpty(book1));
+let book2 = {
+    title: "Манифест Коммунистической партии",
+    pubYear: 1848,
+    price: 1488,
+};
+alert(isEmpty(book2));
+</script>
+</body>
+
+</html> 
