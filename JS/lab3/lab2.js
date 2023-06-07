@@ -6,61 +6,72 @@
  * @returns x  в степени n
  */
 function pow(x, n) {
-    return x ** n; //возвращаем х в степени n
+    return x ** n;
 }
-// функция вычисляет сумму чисел от 1 до n включительно.
-function sumTo(n)
-{
-    return (n*(n+1))/2  //формула суммы арифметической прогрессии
+/**
+ * Возвращает сумму от 1 до n
+ * @param {number} n максимальное число
+ * @returns сумму от 1 до n
+ */
+function sumTo(n) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum += i
+    }
+    return sum;
+}
 
-}
-//функция возвращает факториал числа n
-function factorial(n)
-{
-    if (n<=0)
-    {
-        return 1n; //возвращаем 1 для чисел, меньших 0
-    }
+/**
+ * Считает факториал числа n
+ * @param {number} n основание факториала
+ * @returns факториал  n
+ */
+function factorial(n) {
+    if (n <= 1) return 1n;
     else {
-        return (BigInt(n) * BigInt(factorial(n - 1))); //использование рекурсии 
+        return BigInt(n) * factorial(n - 1);
     }
 }
-//функция возвращает n-е число Фибоначчи
-export function fib(n){
-    let a = BigInt(1); // первое число Фиббоначи
-    let b = BigInt(1); //второе число Фиббоначи
+/**
+ * n-ый член ряда Фибоначчи
+ * @param {number} n 
+ * @returns  n-ый член ряда Фибоначчи
+ */
+function fib(n) {
+    let a = BigInt(1);
+    let b = BigInt(1);
     if (n == BigInt(0)) {
-        return BigInt(0); //возвращаем нуль при n=0
+        return BigInt(0);
     }
     else {
-        //алгоритм нахождения чисел Фиббоначи (базовый)
         for (let i = BigInt(3); i <= n; i++) {
-            let c = a + b;
+           let c = a + b;
             a = b;
             b = c;
         }
         return b;
     }
 }
-//функция принимает целочисленное значение x и возвращает 
-//анонимную функцию. Анонимная функция возвращает 
-//результат сравнения значений y и x
-function compare(x)
-{
-return function(y)
-{
-    if (y>x) return true;
-    else if (y<x) return false;
-    else if (y==x) return null;
+/**
+ * Возвращает анонимную булеву функцию результата сравнения числа с x
+ * @param {number} x число для сравнения
+ * @returns возвращает анонимную булеву функцию результата сравнения числа с x
+ */
+function compare(x) {
+    return function (y) {
+        if (y > x) return true;
+        else if (y < x) return false;
+        else if (y == x) return null;
+    }
 }
-}
-//функция возвращает сумму всех своих аргументов.
-function sum()
-{
-    var result=0; //сумма
-    for (var i=0; i<arguments.length; i++)
-    {
-        result+=arguments[i] //складываем элементы на соответствующих местах
+/**
+ * Сумма всех принятых аргументов функцией 
+ * @returns сумму всех принятых аргументов функцией 
+ */
+function sum() {
+    var result = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        result += arguments[i]
     }
     return result;
 }
