@@ -360,25 +360,25 @@
     </table>
     <script>
         'use strict';
-          let tr = document.querySelectorAll("tr");
-          let t = document.querySelectorAll("td");
-                for (let i = tr.length; i < t.length-tr.length; i ++){
-                    if(i%tr.length===0 || i%tr.length===tr.length-1)
-                        continue;
-                        if(Math.floor(i/tr.length)%2===1){
-                     if(i%2===1)
-                        t[i].style.backgroundColor = "#ffce9e";
-                    else
+        let tr = document.querySelectorAll("tr");
+        let t = document.querySelectorAll("td");
+        for (let i = tr.length; i < t.length - tr.length; i++) {
+            if (i % tr.length === 0 || i % tr.length === tr.length - 1)
+                continue;
+            if (Math.floor(i / tr.length) % 2 === 1) {
+                if (i % 2 === 1)
+                    t[i].style.backgroundColor = "#ffce9e";
+                else
                     t[i].style.backgroundColor = "#d18b47";
-                        }
-                        else{
-                            if(i%2===0)
-                        t[i].style.backgroundColor = "#ffce9e";
-                    else
+            }
+            else {
+                if (i % 2 === 0)
+                    t[i].style.backgroundColor = "#ffce9e";
+                else
                     t[i].style.backgroundColor = "#d18b47";
-                        }
-                    }
-                        
+            }
+        }
+
     </script>
 </body>
 
