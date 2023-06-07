@@ -3,34 +3,44 @@
 
 <body>
     <script>
-        "use strict";
+        'use strict';
         let obj = {
             className: 'open menu'
         }
 
-        function addClass(obj, cls) {
-            let subObj = {};
-            let arr = obj.className ? obj.className.split(" ") : [];
-            for (let i = 0; i < arr.length; i++) {
-                subObj[arr[i]] = true;
+
+
+        obj.addClass = function addClass(cls) {
+            let arr = this.className.split(" ");
+            if (!arr.includes(cls)) {
+                arr.push(cls)
             }
-            subObj[cls] = true;
-            arr = Object.keys(subObj);
-            obj.className = arr.join(" ");
+            this.className = arr.join(" ");
+            return this;
         }
-        function removeClass(obj, cls) {
-            let sub = " " + obj.className + " ";
-            sub = sub.replace(" " + cls + " ", " ");
-            obj.className = sub.trim(" ");
+        obj.removeClass = function removeClass(cls) {
+            let arr = this.className.split(" ");
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === cls) {
+                    arr.splice(i, 1);
+                    i--;
+                }
+            }
+            obj.className = arr.join(' ');
+            return this;
         }
 
-        addClass(obj, 'new');
-        addClass(obj, 'open');
-        addClass(obj, 'me');
+        obj.addClass('new');
+        obj.addClass('hello world');
+        obj.addClass('open');
 
-        alert(obj.className);
-        removeClass(obj.me);
-        alert(obj.className);
+        console.log(obj.className);
+
+
+        obj.removeClass('Js');
+        obj.removeClass('new');
+        obj.removeClass('open');
+        console.log(obj.className);
     </script>
 </body>
 

@@ -15,32 +15,37 @@
 
 		div {
 			color: blue;
-			font-size: 12px;
+			font-size: 18px;
 		}
 	</style>
 </head>
-
 <body>
-	<div></div>
-	<input type="text" class="placeholder" placeholder="подсказка">
+	<div id="1">
+		<label></label>
+		<input type="text" data-placeholder="подсказка">
 
-	<script>
-		'use strict';
+		<script>
+			'use strict';
+			let tf = document.getElementById("1");
 
-		let input = document.querySelector(".placeholder");
-		let div = document.querySelector("div");
+			let input = tf.getElementsByTagName("input")[0];
+			let lb = tf.getElementsByTagName("label")[0];
+			lb.style.display = "none";
 
-		input.onfocus = function () {
-			div.innerHTML = input.getAttribute("placeholder");
-			input.setAttribute("placeholder", "");
-		};
+			input.setAttribute("placeholder", input.dataset.placeholder);
+			lb.innerHTML = input.dataset.placeholder;
 
-		input.onblur = function () {
-			input.setAttribute("placeholder", div.innerHTML);
-			div.innerHTML = "";
-		};
+			input.addEventListener("blur", function () {
+				lb.style.display = "none";
+				input.setAttribute("placeholder", input.dataset.placeholder);
+			});
 
-	</script>
+			input.addEventListener("focus", function () {
+				lb.style.display = "block";
+				input.setAttribute("placeholder", "");
+			});
+
+		</script>
 </body>
 
 </html>
