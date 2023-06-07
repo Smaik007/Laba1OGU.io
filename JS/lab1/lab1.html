@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <title>lab1Smaik</title>
     <style>
         .menu li a:hover {
-        background-color:rgb(181, 161, 239);
-        transition: background-color 1s, transform 1.5s;
+            background-color: rgb(181, 161, 239);
+            transition: background-color 1s, transform 1.5s;
         }
     </style>
 </head>
+
 <body>
-  <script>
-      "use strict";
-      let age,gender;
-      age = prompt('Сколько вам лет?');
-      gender = prompt('Вы какой у вас пол(мужчина,женщина)?');
-      if (age==0 && age<18){
-          alert('Вам работать ещё рано — учитесь!');
-      }  else if (18<=age && age<60 && gender=='мужчина'){
-          alert('Вам ещё работать и работать!');
-      } else if (18<=age && age<55 && gender=='женщина'){
-          alert('Вам ещё работать и работать!');
-      } else if (60<=age && age<65 && gender=='мужчина'){
-          alert('Скоро пенсия!');
-      } else if (55<=age && age<60 && gender=='женщина'){
-          alert('Скоро пенсия!');
-      } else if (age>=65 && gender=='мужчина'){
-          alert('Вам пора на пенсию!');
-      } else if (age>=60 && gender=='женщина'){
-          alert('Вам пора на пенсию!');
-      } else {
-          alert('Да кто ты такой?')
-      }
-  </script>
+    <script>
+        "use strict";
+        let age, gender;
+        age = prompt('Сколько вам лет?');
+        gender = prompt('Вы какой у вас пол(мужчина,женщина)?');
+        if (age == 0 && age < 18) {
+            alert('Вам работать ещё рано — учитесь!');
+        } else if (18 <= age && age < 60 && gender == 'мужчина') {
+            alert('Вам ещё работать и работать!');
+        } else if (18 <= age && age < 55 && gender == 'женщина') {
+            alert('Вам ещё работать и работать!');
+        } else if (60 <= age && age < 65 && gender == 'мужчина') {
+            alert('Скоро пенсия!');
+        } else if (55 <= age && age < 60 && gender == 'женщина') {
+            alert('Скоро пенсия!');
+        } else if (age >= 65 && gender == 'мужчина') {
+            alert('Вам пора на пенсию!');
+        } else if (age >= 60 && gender == 'женщина') {
+            alert('Вам пора на пенсию!');
+        } else {
+            alert('Да кто ты такой?')
+        }
+    </script>
 </body>
+
 </html>

@@ -1,28 +1,29 @@
 <!DOCTYPE HTML>
 <html lang="ru">
+
 <body>
   <script>
     "use strict";
     function isEmpty(obj) {
-  for (let key in obj) {
-    return false;
-  }
-  return true;
-}
+      for (let key in obj) {
+        return false;
+      }
+      return true;
+    }
     let book1 = {};
     alert(isEmpty(book1));
 
     book1.title = "Подсознание может всё!";
-book1.pubYear = 2016;
-book1.price = 549;
-alert(isEmpty(book1));
-let book2 = {
-    title: "Дом страха",
-    pubYear: 2022,
-    price: 799,
-};
-alert(isEmpty(book2));
-</script>
+    book1.pubYear = 2016;
+    book1.price = 549;
+    alert(isEmpty(book1));
+    let book2 = {
+      title: "Дом страха",
+      pubYear: 2022,
+      price: 799,
+    };
+    alert(isEmpty(book2));
+  </script>
 </body>
 
-</html> 
+</html>

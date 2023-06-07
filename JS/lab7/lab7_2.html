@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Lab7_2</title>
 	<style>
-		.placeholder:-moz-placeholder{
+		.placeholder:-moz-placeholder {
 			color: blue;
 		}
 
-		.placeholder::-webkit-input-placeholder{
+		.placeholder::-webkit-input-placeholder {
 			color: blue;
 		}
 
-		div{
+		div {
 			color: blue;
 			font-size: 12px;
 		}
 	</style>
 </head>
+
 <body>
 	<div></div>
-	<input type="text" class="placeholder" placeholder="подсказка"> 
-	
+	<input type="text" class="placeholder" placeholder="подсказка">
+
 	<script>
 		'use strict';
 
 		let input = document.querySelector(".placeholder");
 		let div = document.querySelector("div");
 
-		input.onfocus = function(){
+		input.onfocus = function () {
 			div.innerHTML = input.getAttribute("placeholder");
-			input.setAttribute("placeholder","");
-		}; 
-		
-		input.onblur = function(){ 
-			input.setAttribute("placeholder",div.innerHTML);
-			div.innerHTML = ""; 
-		}; 
+			input.setAttribute("placeholder", "");
+		};
+
+		input.onblur = function () {
+			input.setAttribute("placeholder", div.innerHTML);
+			div.innerHTML = "";
+		};
 
 	</script>
 </body>
+
 </html>

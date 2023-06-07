@@ -5,14 +5,15 @@
   <script>
     "use strict";
     function getSecondsToday() {
-  let now = new Date();
-  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  let diff = now - today;
+      let now = new Date();
+      let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      let diff = now - today;
 
-  return Math.round(diff / 1000); 
-}
+      return Math.round(diff / 1000);
+    }
 
-alert( getSecondsToday() );
-</script>
+    alert(getSecondsToday());
+  </script>
 </body>
-</html> 
+
+</html>

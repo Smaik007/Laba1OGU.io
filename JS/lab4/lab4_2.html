@@ -1,22 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="ru">
+
 <body>
-  <script>
-    "use strict";
-        let book1={};
+    <script>
+        "use strict";
+        let book1 = {};
         book1.title = "Дом страха";
         book1.pubYear = 2022;
         book1.price = 799;
-        book1.show = function(){
-            console.log(book1.title +" - "+ book1.price);
+        book1.show = function () {
+            console.log(book1.title + " - " + book1.price);
         }
 
-        function showBook(){
-            console.log(this.title +' - '+ this.price);
+        function showBook() {
+            console.log(this.title + ' - ' + this.price);
         }
-           
-        
-        let book2={
+
+
+        let book2 = {
             title: "Подсознание может всё!",
             pubYear: 2016,
             price: 549,
@@ -26,11 +27,12 @@
 
         book1.show();
         console.log("\n");
-		book2.show();
+        book2.show();
     </script>
 </body>
+
 </html>
 </script>
 </body>
 
-</html> 
+</html>

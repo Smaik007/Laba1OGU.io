@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 
 <html lang="ru">
-    <head>
-        <title>Работа с событиями</title>
-    </head>
 
-    <body>
-        <input type="button" id = "hider" value = "Нажмите, чтобы спрятать текст"/>
+<head>
+    <title>Работа с событиями</title>
+</head>
 
-        <div id = "text">Текст</div>
+<body>
+    <input type="button" id="hider" value="Нажмите, чтобы спрятать текст" />
 
-        <script>
-            'use strict'
+    <div id="text">Текст</div>
 
-            let b = document.getElementById("hider")
+    <script>
+        'use strict'
 
-            b.addEventListener('click', function() {
-                let t = document.getElementById("text")
+        let b = document.getElementById("hider")
 
-                if (t.style.display != "none") {
-                    t.style.display = "none"
-                    b.value = "Показать текст"
-                } else {
-                    t.style.display = "block"
-                    b.value = "Нажмите, чтобы спрятать текст"
-                }     
-            }, false)
-        </script>
-    </body>
+        b.addEventListener('click', function () {
+            let t = document.getElementById("text")
+
+            if (t.style.display != "none") {
+                t.style.display = "none"
+                b.value = "Показать текст"
+            } else {
+                t.style.display = "block"
+                b.value = "Нажмите, чтобы спрятать текст"
+            }
+        }, false)
+    </script>
+</body>
+
 </html>
