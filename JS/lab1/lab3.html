@@ -13,13 +13,13 @@
 
 <body>
   <script>
-    "use strict"
-    let num;
-    if (num < 101) {
+      'use strict';
+      let num;
       do {
-        num = prompt("Введите число, большее 100 или нажмите esc", "");
-      } while ((Number(num) != num || num <= 100) && num);
-    }
+          num = prompt("Введите число больше 100:");
+      }
+      while ((Number(num) != num || num <= 100) && num);
+      alert("Это было трудно!!!")
   </script>
 </body>
 
