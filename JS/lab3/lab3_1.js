@@ -36,7 +36,7 @@ export function ucFirst(str) { //возвращает строку str с заг
  */
 export function checkSpam(str) { //возвращает true, если строка str содержит 'viagra' или 'XXX', а иначе false. Функция должна быть нечувствительна к регистру.
     let newstr = str.toLowerCase();
-    return newstr.includes('viagra') || NewStr.includes('xxx');
+    return newstr.includes('viagra') || newstr.includes('xxx');
 }
 /**
  * Функция проверяет длину строки str, и если она превосходит maxlength – заменяет конец str на символ многоточие "…"
