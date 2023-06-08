@@ -1,51 +1,47 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
 
-<head>
-	<meta charset="utf-8">
-	<title>Lab7_2</title>
-	<style>
-		.placeholder:-moz-placeholder {
-			color: blue;
-		}
+<html lang="ru">
+    <head>
+        <title>Lab7_2Smaik</title>
 
-		.placeholder::-webkit-input-placeholder {
-			color: blue;
-		}
+        <style>
+            ::placeholder {
+                color: blue;
+            }
 
-		div {
-			color: blue;
-			font-size: 18px;
-		}
-	</style>
-</head>
-<body>
-	<div id="1">
-		<label></label>
-		<input type="text" data-placeholder="подсказка">
+            #container {
+			    color: blue;
+	    }
+        </style>
+    </head>
 
-		<script>
-			'use strict';
-			let tf = document.getElementById("1");
+    <body>
+        <div id="container">
+            <label></label>
+            <input type = "text" data-placeholder = "Подсказка"/>
+        </div>
 
-			let input = tf.getElementsByTagName("input")[0];
-			let lb = tf.getElementsByTagName("label")[0];
-			lb.style.display = "none";
+        <script>
+            'use strict'
 
-			input.setAttribute("placeholder", input.dataset.placeholder);
-			lb.innerHTML = input.dataset.placeholder;
+            let cont = document.getElementById("container")
 
-			input.addEventListener("blur", function () {
-				lb.style.display = "none";
-				input.setAttribute("placeholder", input.dataset.placeholder);
-			});
+            let input = cont.getElementsByTagName("input")[0]
+            let lb = cont.getElementsByTagName("label")[0]
+            lb.style.display = "none"
 
-			input.addEventListener("focus", function () {
-				lb.style.display = "block";
-				input.setAttribute("placeholder", "");
-			});
+            input.setAttribute("placeholder", input.dataset.placeholder)
+            lb.innerHTML = input.dataset.placeholder
 
-		</script>
-</body>
+            input.addEventListener("blur", function () {
+                lb.style.display = "none"
+                input.setAttribute("placeholder", input.dataset.placeholder)
+            })
 
+            input.addEventListener("focus", function () {
+                lb.style.display = "block"
+                input.setAttribute("placeholder", "")
+            })
+        </script>
+    </body>
 </html>
