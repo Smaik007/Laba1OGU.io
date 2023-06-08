@@ -17,8 +17,8 @@
 
     <body>
         <div id="container">
-            <label></label>
-            <input type = "text" data-placeholder = "Подсказка"/>
+            <label for = "www"></label>
+            <input id = "www" type = "text" data-placeholder = "Подсказка"/>
         </div>
 
         <script>
@@ -34,7 +34,7 @@
             lb.innerHTML = input.dataset.placeholder
 
             input.addEventListener("blur", function () {
-                lb.style.display = "none"
+                lb.style.display = "block"
                 input.setAttribute("placeholder", input.dataset.placeholder)
             })
 
